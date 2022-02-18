@@ -1,0 +1,211 @@
+
+/* ヘッダーの装飾 */
+header{
+    background-image: url('./asset/sakana.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.header_left ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_left li{
+    padding-right: 30px;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+.header_left a:hover {
+    color: rgba(0, 255, 255, 0.89);
+  }
+
+.header_left a{
+    color: rgb(248, 245, 248);
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+}
+
+.main_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.main_title h1{
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.text-focus-in {
+    -webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+/* NEWSの装飾 */
+
+.news{
+    background-image: url(./asset/haikei.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* スライドショー */
+
+.slideshow li{
+    margin: 10px;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+  }
+
+.slideshow{
+    display: flex;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    height: 340px;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.slideshow {
+    display: flex;
+    animation: loop-slide 20s infinite linear 1s both;
+  }
+  @keyframes loop-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.slide-paused:hover .slideshow {
+    animation-play-state: paused;
+  }
+
+.content-hover {
+    transition: all 0.2s;
+  }
+
+.content-hover:hover {
+    transform: translateY(-20px);
+    border-radius: 0 10%;
+    box-shadow: 0 3px 10px 0 #333;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+.news_title{
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
+    color: rgb(32, 102, 143);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.news_text dl{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0; 
+    font-family: 'Kiwi Maru', serif;
+    color: rgb(7, 92, 121);
+    border-bottom: solid rgb(7, 92, 121) 1px;
+}
+
+dl dd {
+    padding-left: 20px;
+  }
+
+.news_text{
+    margin-bottom: 150px;
+}
+
+.news_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sakana_icon{
+    background-image: url("./asset/fish_transparent.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+
+.eat{
+    background-image: url("./asset/fish2_transparent.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100px;
+    height: 100px; 
+}
+
+.sakana_mure{
+    background-image: url(./asset/mure_transparent\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    transform: translate(1500px) translateY(100px);
+}
+
+.oyogu{
+    background-image: url(./asset/mure_transparent\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    transform: translateX(-1000px) translateY(100px);
+    transition: all 9s ease;
+}
+
+/* -- リナさん編集 -- */
