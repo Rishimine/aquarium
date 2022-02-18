@@ -147,6 +147,10 @@ header{
     padding-bottom: 30px;
 }
 
+.news_text{
+  height: 300px;
+}
+
 .news_text dl{
     display: flex;
     flex-wrap: wrap;
@@ -160,9 +164,6 @@ dl dd {
     padding-left: 20px;
   }
 
-.news_text{
-    margin-bottom: 150px;
-}
 
 .news_content{
     display: flex;
@@ -195,7 +196,7 @@ dl dd {
     background-repeat: no-repeat;
     height: 100px;
     width: 100px;
-    transform: translate(1500px) translateY(100px);
+    transform: translate(1500px) translateY(-300px);
 }
 
 .oyogu{
@@ -204,8 +205,23 @@ dl dd {
     background-repeat: no-repeat;
     height: 100px;
     width: 100px;
-    transform: translateX(-1000px) translateY(100px);
+    transform: translateX(-1000px) translateY(-300px);
     transition: all 9s ease;
 }
+
+.kawauso{
+  background-image: url(./asset/kawauso_biku.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 400px;
+  transform: translateX(1500px) translateY(-300px); 
+}
+
+.biku{
+  transform: translateX(1050px) translateY(-300px); 
+  transition: all 2s ease;
+}
+
 
 /* -- リナさん編集 -- */

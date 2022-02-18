@@ -10,6 +10,10 @@ $(function(){
 
      //さかな泳ぐ
         $(".sakana_mure").toggleClass('oyogu');
+
+    //かわうそびっくり
+        $(".kawauso").toggleClass('biku');
+        
     })
 
     /* -- リナさん編集 -- */
