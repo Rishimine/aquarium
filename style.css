@@ -1,5 +1,75 @@
 
 /* ヘッダーの装飾 */
+
+/* Loading背景画面設定　*/
+#splash {
+position: fixed;
+width: 100%;
+height: 100%;
+z-index: 999;
+background-color: white;
+text-align:center;
+}
+
+#splash_logo {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#splash_logo img{
+  height: 300px;
+  width: 300px;
+  animation: pyonpyon 3s infinite ease;
+}
+
+@keyframes pyonpyon {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, -15px);
+  }
+  25% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, -15px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.fadeUp{
+animation-name: fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+from {
+  opacity: 0;
+transform: translateY(100px);
+}
+
+to {
+  opacity: 1;
+transform: translateY(0);
+}
+}
+
 header{
     background-image: url('./asset/sakana.jpeg');
     background-size: cover;
@@ -223,5 +293,75 @@ dl dd {
   transition: all 2s ease;
 }
 
-
+=======
 /* -- リナさん編集 -- */
+.one{
+    background-image: url(./canva-blue-watercolor-abstract-background-MAE2KwoFsTU.jpg);
+}
+
+
+
+#pickup{
+    text-align: center;
+    padding-top: 20px;
+   
+}
+
+
+.zoo{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.imgBox img{
+    border-radius: 30%;
+    max-width: 40%;
+    padding: 20px 20px;
+   
+}
+
+.text{
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+
+.price{
+    padding: 30px ;
+    text-align: center;
+}
+
+.price span{
+padding: 10px;
+}
+
+
+
+
+
+.access{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 12px;
+padding: 30px 10px;
+
+}
+
+.address{
+font-size: 12px;
+padding: 20px 60px;
+}
+
+
+
+footer{
+    text-align: center;
+    font-size: small;
+    height: 60px;
+    padding-top: 20px;
+    background-image: url(./canva-blue-watercolor-abstract-background-MAE2KwoFsTU.jpg);
+}
+>>>>>>> 82d26519e9b7aeb91dceb6a1885f7eaa31ad8c6a

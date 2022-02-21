@@ -1,8 +1,16 @@
+
+
 // console.log("test");
 
 $(function(){
 
     // console.log("test");
+
+    //logoの表示
+    $(window).on('load',function(){
+    $("#splash").delay(1000).fadeOut('slow');
+    $("#splash_logo").delay(1000).fadeOut('slow');
+     });
 
     //魚たべる
     $(".sakana_icon").on("click",function(){
@@ -16,10 +24,16 @@ $(function(){
         
     })
 
+
     /* -- リナさん編集 -- */
 
+
+
+    $('.imgBox').on('mouseover',function(){
+        $(this).css('opacity',0.5);
+    })
+    .on('mouseleave',function(){
+    
+    $(this).css('opacity',1);
+    })
 })
-
-
-
-
