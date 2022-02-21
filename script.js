@@ -6,13 +6,24 @@ $(function(){
 
     // console.log("test");
 
+    //logoの表示
+    $(window).on('load',function(){
+    $("#splash").delay(1000).fadeOut('slow');
+    $("#splash_logo").delay(1000).fadeOut('slow');
+     });
+
     //魚たべる
     $(".sakana_icon").on("click",function(){
         $(".sakana_icon").toggleClass('eat');
 
      //さかな泳ぐ
         $(".sakana_mure").toggleClass('oyogu');
+
+    //かわうそびっくり
+        $(".kawauso").toggleClass('biku');
+        
     })
+
 
     /* -- リナさん編集 -- */
 
@@ -25,4 +36,5 @@ $(function(){
     
     $(this).css('opacity',1);
     })
+})
 

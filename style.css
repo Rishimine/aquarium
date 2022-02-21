@@ -1,5 +1,75 @@
 
 /* ヘッダーの装飾 */
+
+/* Loading背景画面設定　*/
+#splash {
+position: fixed;
+width: 100%;
+height: 100%;
+z-index: 999;
+background-color: white;
+text-align:center;
+}
+
+#splash_logo {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#splash_logo img{
+  height: 300px;
+  width: 300px;
+  animation: pyonpyon 3s infinite ease;
+}
+
+@keyframes pyonpyon {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, -15px);
+  }
+  25% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, -15px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.fadeUp{
+animation-name: fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+from {
+  opacity: 0;
+transform: translateY(100px);
+}
+
+to {
+  opacity: 1;
+transform: translateY(0);
+}
+}
+
 header{
     background-image: url('./asset/sakana.jpeg');
     background-size: cover;
@@ -147,6 +217,10 @@ header{
     padding-bottom: 30px;
 }
 
+.news_text{
+  height: 300px;
+}
+
 .news_text dl{
     display: flex;
     flex-wrap: wrap;
@@ -160,9 +234,6 @@ dl dd {
     padding-left: 20px;
   }
 
-.news_text{
-    margin-bottom: 150px;
-}
 
 .news_content{
     display: flex;
@@ -195,7 +266,7 @@ dl dd {
     background-repeat: no-repeat;
     height: 100px;
     width: 100px;
-    transform: translate(1500px) translateY(100px);
+    transform: translate(1500px) translateY(-300px);
 }
 
 .oyogu{
@@ -204,9 +275,24 @@ dl dd {
     background-repeat: no-repeat;
     height: 100px;
     width: 100px;
-    transform: translateX(-1000px) translateY(100px);
+    transform: translateX(-1000px) translateY(-300px);
     transition: all 9s ease;
 }
+
+.kawauso{
+  background-image: url(./asset/kawauso_biku.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 400px;
+  transform: translateX(1500px) translateY(-300px); 
+}
+
+.biku{
+  transform: translateX(1050px) translateY(-300px); 
+  transition: all 2s ease;
+}
+
 
 /* -- リナさん編集 -- */
 .one{
