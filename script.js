@@ -6,7 +6,7 @@ $(function(){
 
     // console.log("test");
 
-    //logoの表示
+    //カワウソの表示
     $(window).on('load',function(){
     $("#splash").delay(1000).fadeOut('slow');
     $("#splash_logo").delay(1000).fadeOut('slow');
@@ -23,7 +23,6 @@ $(function(){
         $(".kawauso").toggleClass('biku');
         
     })
-
 
     /* -- リナさん編集 -- */
 
